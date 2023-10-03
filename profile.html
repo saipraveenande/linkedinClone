@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LinkedIn</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="navbar-left">
+            <a href="index.html" class="logo"> <img src="./images/logo.png"/></a>
+            <div class="search-box">
+                <img src="./images/search.png"/>
+                <input type="text" placeholder="Search"/>
+            </div>
+        </div>
+        <div class="navbar-center">
+            <ul type="none">
+                <li><a href="index.html" class="active-link"><img src="./images/home.png"/><span>Home</span></a></li>
+                <li><a href="#"><img src="./images/network.png"/><span>My Network</span></a></li>
+                <li><a href="#"><img src="./images/jobs.png"/><span>Jobs</span></a></li>
+                <li><a href="#"><img src="./images/message.png"/><span>Messaging</span></a></li>
+                <li><a href="#"><img src="./images/notification.png"/><span>Notifications</span></a></li>
+            </ul>
+        </div>
+        <div class="navbar-right">
+            <div class="online">
+            <img src="./images/user-1.jpg" class="nav-profile-img" onclick="toggleMenu()"/>
+            </div>
+        </div>
+
+        <div class="profile-menu-wrap" id="profileMenu">
+            <div class="profile-menu">
+                <div class="user-info">
+                    <img src="./images/user-1.jpg">
+                    <div>
+                        <h3>Sai Praveen Ande</h3>
+                        <a href="#">View your profile</a>
+                    </div>
+                </div>
+                <hr>
+                <a href="#" class="profile-menu-link">
+                    <img src="./images/feedback.png"/>
+                    <p>Give Feedback</p>
+                    <span>></span>
+                </a>
+                <a href="#" class="profile-menu-link">
+                    <img src="./images/setting.png"/>
+                    <p>Settings & Privacy</p>
+                    <span>></span>
+                </a>
+                <a href="#" class="profile-menu-link">
+                    <img src="./images/help.png"/>
+                    <p>Help & Support</p>
+                    <span>></span>
+                </a>
+                <a href="#" class="profile-menu-link">
+                    <img src="./images/display.png"/>
+                    <p>Display & Accessibility</p>
+                    <span>></span>
+                </a>
+                <a href="#" class="profile-menu-link">
+                    <img src="./images/logout.png"/>
+                    <p>Sign Out</p>
+                    <span>></span>
+                </a>
+            </div>
+        </div>
+
+    </nav>
+
+    <div class="container">
+        <div class="profile-main">
+          <div class="profile-container">
+            <img src="./images/coverpic.jpg" class='cover-pic' width="100%">
+            <div class="profile-container-inner">
+                <img src="./images/user-3.jpg" class="profile-pic">
+                <h1>Ande Bala Sai</h1>
+                <b>Aspiring Product Manager | Digital Marketing Expert | Founder |</b>
+                <p><span>Hyderabad, Telangana, India</span> &middot; <a href="#">Contact info</a></p>
+                <div class="mutual-connection">
+                    <img src="./images/user-2.png">
+                    <span>1 mutual connection: Vamsi Srinivas</span>
+                </div>
+                <div class="profile-btn">
+                    <a href="#" class="primary-btn"><img src="./images/connect.png">Connect</a>
+                    <a href="#"><img src="./images/chat.png">Message</a>
+                    <a id="more" href="#">More</a>
+                    <a id="ellipsis" href="#"><b>⋮</b></a>
+                </div>
+            </div>
+          </div>
+          <div class="profile-description">
+            <h2>About</h2>
+            <p>This is Banny, The Founder at Olfani Digital Marketing Agency. <br/>I help Startups & medium businesses to grow online and to generate leads with My Digital Marketing Services. I am here to share my knowledge of social media marketing. Marketing tips, tricks, hacks, trends, updates and many more which is useful to grow your business.</p>
+            <a href="#" class="see-more-link">...see more</a>
+          </div>
+          <div class="profile-description">
+            <h2>Experience</h2>
+            <div class="profile-desc-row">
+                <img src="./images/default-company.png">
+                <div>
+                    <h3>Founder</h3>
+                    <b>PropertiesH.com &middot; Full-time</b>
+                    <b>Jun 2022 - Present &middot; 1yr 4 mos</b>
+                    <p><strong>Skills:</strong> Product Strategy &middot; Product Management &middot; Customer Engagement &middot; Strategic Planning &middot; Digital Marketing</p>
+                    <hr/>
+                </div>
+            </div>
+            <div class="profile-desc-row">
+                <img src="./images/default-company.png">
+                <div>
+                    <h3>Proprietor & Digital Marketer</h3>
+                    <b>Olfani Digital Marketing &middot; Full-time</b>
+                    <b>Jan 2020 - Mar 2022 &middot; 2yrs 3 mos</b>
+                    <p>Provided Digital Marketing Services to various clients by understanding, educating & setting the right expectations.Provided Digital Marketing Services to various clients by understanding, educating & setting the right expectations.</p>
+                    <p><strong>Skills:</strong>Wireframing &middot; Creative content creation &middot; Online Marketing &middot; Facebook Marketing</p>
+                    <hr/>
+                </div>
+            </div>
+            <div class="profile-desc-row">
+                <img src="./images/centum.jpg">
+                <div>
+                    <h3>Production Technician</h3>
+                    <b>Centum Electronics Ltd. &middot; Full-time</b>
+                    <b>Apr 2016 - Jan 2019 &middot; 2yrs 10 mos</b>
+                    <p><strong>Skills:</strong>Project Management &middot; Agile Methodologies &middot; Team Management &middot; product</p>
+                </div>
+            </div>
+            <hr>
+            <a href="#" class="experience-link">Show all 4 experinces <img src="./images/right-arrow.png" ></a>
+        </div>
+
+        <div class="profile-description">
+            <h2>Education</h2>
+            <div class="profile-desc-row">
+                <img src="./images/amie.png">
+                <div>
+                    <h3>Institution of Engineers of India (IEI), Kolkata</h3>
+                    <b>Bachelor's degree, Computer Science & Engineering</b>
+                    <b>Jun 2017 - May 2023</b>
+                    <hr/>
+                </div>
+            </div>
+            <div class="profile-desc-row">
+                <img src="./images/vishnu.png">
+                <div>
+                    <h3> Vishnu Institute of Technology (Autonomous)</h3>
+                    <b>Diploma, Electronics and Communications Engineering</b>
+                    <b>July 2013 - May 2016</b>
+                    <p>Grade: 83%</p>
+                </div>
+            </div>
+            </div>
+            <div class="profile-description">
+                <h2>Licenses & certifications</h2>
+                <div class="profile-desc-row">
+                    <img src="./images/udemy.png">
+                    <div>
+                        <h3>Become a Product Manager</h3>
+                        <b>Udemy</b>
+                        <b>Issued Sep 2023</b>
+                        <b id="bottom">Credential ID UC-28868674-0376-4e71-a5ff-1531b2c805ac</b>
+                        <a href="https://www.udemy.com/certificate/UC-28868674-0376-4e71-a5ff-1531b2c805ac/" target="_blank" class="credential">Show credential</a>
+                        <p><strong>Skills: </strong>Product Lifecycle Management &middot; Product Strategy &middot; Project Management</p>
+                    </div>
+                </div>
+            </div>
+            <div class="profile-description">
+                <h2>Skills</h2>
+                <div class="skils">
+                    <a href="#">Product Lifecycle Management</a>
+                    <a href="#"><img src="./images/udemy.png"> Become a Product Manager</a>
+                </div>
+                <hr>
+                <div class="skils">
+                    <a href="#">Product Strategy</a>
+                    <a href="#"><img src="./images/default-company.png"> Founder at PropertiesH.com</a>
+                    <a href="#"><img src="./images/udemy.png"> Become a Product Manager</a>
+                </div>
+                <hr>
+                <div class="skils">
+                    <a href="#">Wireframing</a>
+                    <a href="#"><img src="./images/default-company.png"> Proprietor & Digital Marketer at Olfani Digital Marketing Agency</a>
+                </div>
+                <hr>
+                <div class="skils">
+                    <a href="#">Product Developement</a>
+                    <a href="#"><img src="./images/default-company.png"> Founder at PropertiesH.com</a>
+                </div>
+                <hr>
+                <div class="skils">
+                    <a href="#">Product Marketing</a>
+                    <a href="#"><img src="./images/udemy.png"> Become a Product Manager</a>
+                </div>
+                <hr>
+                <div class="skils">
+                    <a href="#">Creative Content Creation</a>
+                    <a href="#"><img src="./images/default-company.png"> Proprietor & Digital Marketer at Olfani Digital Marketing Agency</a>
+                </div>
+                <hr>
+                <div class="skils">
+                    <a href="#">Product Management</a>
+                    <a href="#"><img src="./images/udemy.png"> Become a Product Manager</a>
+                </div>
+            </div>
+            <div class="profile-description">
+                <h2>Languages</h2>
+                <a href="#" class="language-btn">Telugu</a>
+                <a href="#" class="language-btn">Kannada</a>
+                <a href="#" class="language-btn">English</a>
+                <a href="#" class="language-btn">Hindi</a>
+            </div>
+        </div>
+
+
+        <div class="profile-sidebar">
+            <div class="sidebar-ad">
+                <small>Ad &middot; &middot; &middot;</small>
+                <p>Master the 5 principles of web design</p>
+                <div>
+                    <img src="./images/user-1.jpg"/>
+                    <img  src="./images/angadiecom.png"/>
+                </div>
+                <strong>Build your eCommerce Store in Seconds</strong>
+                <a href="https://angadie.com" target="_blank" class="ad-link">Learn more</a>
+            </div>
+            <div class="sidebar-people">
+                <h3>People you may know</h3>
+                <div class="sidebar-people-row">
+                    <img src="./images/user4.jpg">
+                    <div>
+                        <h2>Gayatri R</h2>
+                        <p>32+k Followers, Talent Acquisition Specialist and A Certified Design thinker</p>
+                        <a href="#">Connect</a>
+                    </div>
+                </div>
+                <hr>
+                <div class="sidebar-people-row">
+                    <img src="./images/user5.jpg">
+                    <div>
+                        <h2>Nitin Singh</h2>
+                        <p>Senior Manager HR at Sagility</p>
+                        <a href="#">Connect</a>
+                    </div>
+                </div>
+                <hr>
+                <div class="sidebar-people-row">
+                    <img src="./images/user-6.jpg">
+                    <div>
+                        <h2>Shruti Arutla</h2>
+                        <p>Experienced Learning Managament Administrator with 7+ years</p>
+                        <a href="#">Connect</a>
+                    </div>
+                </div>
+                <hr>
+                <div class="sidebar-people-row">
+                    <img src="./images/user3.jpg">
+                    <div>
+                        <h2>Bhaveshwari Birje</h2>
+                        <p>Human Resource Executive</p>
+                        <a href="#">Connect</a>
+                    </div>
+                </div>
+                <hr>
+                <div class="sidebar-people-row">
+                    <img src="./images/user6.jpg">
+                    <div>
+                        <h2>Nazir Ahammad Shaik</h2>
+                        <p>--</p>
+                        <a href="#">Connect</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="profile-footer">
+        <div class="sidebar-useful-links">
+            <a href="#">About</a>
+            <a href="#">Accessibility</a>
+            <a href="#">Help Center</a>
+            <a href="#">Privacy & Terms</a>
+            <a href="#">Ad Choices</a>
+            <a href="#">Advertising</a>
+            <a href="#">Business Services</a>
+            <a href="#">More</a>
+
+            <div class="copyright-msg">
+                <span>Linked</span><img src="./images/logo.png"/>
+                <p>&nbsp;LinkedIn Corporation &#169; 2023</p>
+            </div>
+        </div>
+    </div>
+
+
+    <script>
+        let profileMenu = document.getElementById("profileMenu");
+        toggleMenu=()=>{profileMenu.classList.toggle("open-menu");
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LinkedIn</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="navbar-left">
+            <a href="index.html" class="logo"> <img src="./images/logo.png"/></a>
+            <div class="search-box">
+                <img src="./images/search.png"/>
+                <input type="text" placeholder="Search"/>
+            </div>
+        </div>
+        <div class="navbar-center">
+            <ul type="none">
+                <li><a href="index.html" class="active-link"><img src="./images/home.png"/><span>Home</span></a></li>
+                <li><a href="#"><img src="./images/network.png"/><span>My Network</span></a></li>
+                <li><a href="#"><img src="./images/jobs.png"/><span>Jobs</span></a></li>
+                <li><a href="#"><img src="./images/message.png"/><span>Messaging</span></a></li>
+                <li><a href="#"><img src="./images/notification.png"/><span>Notifications</span></a></li>
+            </ul>
+        </div>
+        <div class="navbar-right">
+            <div class="online">
+            <img src="./images/user-1.jpg" class="nav-profile-img" onclick="toggleMenu()"/>
+            </div>
+        </div>
+
+        <div class="profile-menu-wrap" id="profileMenu">
+            <div class="profile-menu">
+                <div class="user-info">
+                    <img src="./images/user-1.jpg">
+                    <div>
+                        <h3>Sai Praveen Ande</h3>
+                        <a href="profile.html">View your profile</a>
+                    </div>
+                </div>
+                <hr>
+                <a href="#" class="profile-menu-link">
+                    <img src="./images/feedback.png"/>
+                    <p>Give Feedback</p>
+                    <span>></span>
+                </a>
+                <a href="#" class="profile-menu-link">
+                    <img src="./images/setting.png"/>
+                    <p>Settings & Privacy</p>
+                    <span>></span>
+                </a>
+                <a href="#" class="profile-menu-link">
+                    <img src="./images/help.png"/>
+                    <p>Help & Support</p>
+                    <span>></span>
+                </a>
+                <a href="#" class="profile-menu-link">
+                    <img src="./images/display.png"/>
+                    <p>Display & Accessibility</p>
+                    <span>></span>
+                </a>
+                <a href="#" class="profile-menu-link">
+                    <img src="./images/logout.png"/>
+                    <p>Sign Out</p>
+                    <span>></span>
+                </a>
+            </div>
+        </div>
+
+    </nav>
+
+    <div class="container">
+        <div class="left-sidebar">
+             <div class="sidebar-profile-box">
+                <img src="./images/coverPhoto.jpg" width="100%"/>
+                <div class="sidebar-profile-info">
+                    <img src="./images/user-1.jpg" />
+                    <h1><a href="https://www.linkedin.com/in/saipraveenande/">Sai Praveen Ande</a></h1>
+                    <h3>Looking for JOB || B.Tech-2023 || HTML, CSS, JavaScript, Python, SQL, C || Adaptable || Immediate Joiner ||</h3>
+                    <ul type="none">
+                        <li>Your profile views<span>488</span></li>
+                        <li>Your post views<span>901</span></li>
+                        <li>Your connections<span>1510</span></li>
+                    </ul>
+                </div>
+                <div class="sidebar-profile-link">
+                    <a href="https://www.linkedin.com/my-items/saved-jobs/?start=0"><img src="./images/items.png"/> My items</a>
+                    <a href="https://www.linkedin.com/premium/survey/?destRedirectURL=https%3A%2F%2Fwww.linkedin.com%2Ffeed%2F&referenceId=xdTeZHtzRZeJsNOkuQIhWA%3D%3D&upsellOrderOrigin=premium_homepage_identity_upsell&utype=job"><img src="./images/premium.png"/> Try Premium</a>
+                </div>
+             </div>
+            <div id="sidebarActivity" class="sidebar-activity">
+                <h3>RECENT</h3>
+                <a href="#"><img src="./images/recent.png" />Fresher Jobs</a>
+                <a href="#"><img src="./images/recent.png" />Web Development</a>
+                <a href="#"><img src="./images/recent.png" />Frontend</a>
+                <a href="#"><img src="./images/recent.png" />Software Development</a>
+                <a href="#"><img src="./images/recent.png" />Hyderabad Jobs</a>
+                <a href="#"><img src="./images/recent.png" />User Interface</a>
+                <h3>GROUPS</h3>
+                <a href="#"><img src="./images/group.png" />Web Developers</a>
+                <a href="#"><img src="./images/group.png" />CS50</a>
+                <a href="#"><img src="./images/group.png" />Hiring Fresher | Jobs</a>
+                <a href="#"><img src="./images/group.png" />IT Recruiter/Talent Acquisition</a>
+                <h3>HASHTAG</h3>
+                <a href="#"><img src="./images/hashtag.png" />Hyderabadjobs</a>
+                <a href="#"><img src="./images/hashtag.png" />punejobs</a>
+                <a href="#"><img src="./images/hashtag.png" />bengalorejobs</a>
+                <div class="discover-more-link">
+                    <a href="#">Discover more</a>
+                </div>
+            </div>
+            <p id="showMoreLink" onclick="toggleActivity()">Show more <b>+</b></p>
+        </div>
+
+        <div class="main-content">
+            <div class="create-post">
+                <div class="create-post-input">
+                    <img src="./images/user-1.jpg" />
+                    <textarea rows="1" placeholder="Start a post"></textarea>
+                </div>
+                <div class="create-post-link">
+                    <li><img src="./images/photo.png" />Photo</li>
+                    <li><img src="./images/video.png" />Video</li>
+                    <li><img src="./images/event.png" />Event</li>
+                    <li>Post</li>
+                </div>
+            </div>
+            <div class="sort-by">
+                <hr/>
+                <p>Sort by: <span>Top<img src="./images/down-arrow.png"/></span></p>
+            </div>
+            <div class="post">
+                <div class="post-author">
+                    <a href="profile.html"><img src="./images/user-3.jpg" /></a>
+                    <div>
+                        <h1><a href="profile.html">Bala Sai</a></h1>
+                        <small>Aspiring Product Manager | Digital Marketing Expert | Founder</small>
+                        <small>2 hours ago</small>
+                    </div>
+                </div>
+                <p>The success of every website depends on search enginer optimisation and digital marketing strategy. If you are on first page of all major search engines then you are ahead among your competitors.</p>
+                <img src="./images/post-image-1.png" width="100%">
+                <div class="post-stats">
+                    <div>
+                        <img src="./images/thumbsup.png"/>
+                        <img src="./images/love.png"/>
+                        <img src="./images/clap.png"/>
+                        <span class="liked-users">285</span>
+                    </div>
+                    <div>
+                        <span>22 comments &middot; 4 reposts</span>
+                    </div>
+                </div>
+                <div class="post-activity">
+                    <div>
+                        <img src="./images/user-1.jpg" class="post-activity-user-icon"/>
+                        <img src="./images/down-arrow.png" class="post-activity-arrow-icon"/>
+                    </div>
+                    <div class="post-activity-link">
+                        <img src="./images/like.png"/>
+                        <span>Like</span>
+                    </div>
+                    <div class="post-activity-link">
+                        <img src="./images/comment.png"/>
+                        <span>Comment</span>
+                    </div>
+                    <div class="post-activity-link">
+                        <img src="./images/share.png"/>
+                        <span>Repost</span>
+                    </div>
+                    <div class="post-activity-link">
+                        <img src="./images/send.png"/>
+                        <span>Send</span>
+                    </div>
+                </div>
+            </div>
+            <div class="post">
+                <div class="post-author">
+                    <img src="./images/user-6.jpg" />
+                    <div>
+                        <h1>Shruti Arutla</h1>
+                        <small>Experienced Learning Managament Administrator with 7+ years</small>
+                        <small>1 week ago</small>
+                    </div>
+                </div>
+                <p>Just finished the course "Time management for Greate Meaning and Happiness" by <a href="https://www.linkedin.com/in/cassiemholmes/">Cassie Holmes</a>! Check it out: <br><a href="https://www.linkedin.com/learning/certificates/a7da4729bbdde3a220da94847358f452168cac6e37d272198dc6922ed5119e11?trk=share_certificate">https://lnkd.in/gYkK9zfW</a><a href="#"> #timemanagement</a></p>
+                <a href="https://www.linkedin.com/learning/certificates/a7da4729bbdde3a220da94847358f452168cac6e37d272198dc6922ed5119e11?trk=share_certificate"><img src="./images/post-2.jpg" width="100%"></a>
+                <div class="post-stats">
+                    <div>
+                        <img src="./images/thumbsup.png"/>
+                        <img src="./images/clap.png"/>
+                        <span class="liked-users">16</span>
+                    </div>
+                </div>
+                <div class="post-activity">
+                    <div>
+                        <img src="./images/user-1.jpg" class="post-activity-user-icon"/>
+                        <img src="./images/down-arrow.png" class="post-activity-arrow-icon"/>
+                    </div>
+                    <div class="post-activity-link">
+                        <img src="./images/like.png"/>
+                        <span>Like</span>
+                    </div>
+                    <div class="post-activity-link">
+                        <img src="./images/comment.png"/>
+                        <span>Comment</span>
+                    </div>
+                    <div class="post-activity-link">
+                        <img src="./images/share.png"/>
+                        <span>Repost</span>
+                    </div>
+                    <div class="post-activity-link">
+                        <img src="./images/send.png"/>
+                        <span>Send</span>
+                    </div>
+                </div>
+                <p>Be the first to comment on this</p>
+            </div>
+            <div class="post">
+                <div class="post-author">
+                    <img src="./images/user3.jpg">
+                    <div>
+                        <h1>Bhaveshwari Birje</h1>
+                        <small>Human Resource Executive</small>
+                        <small>1 month ago</small>
+                    </div>
+                </div>
+                <p>We are hiring in Bangalore and Jaipur! Do you love tech, care about others, and want to make an impact on the world? Send your resumes to <a href="#">jobs@intimetec.com</a> today!<br> <br>                    <a href="#"> #nowhiring</a> <a href="#"> #indiahiring</a></p>
+                <img src="./images/post-3.jpg" width="100%">
+                <div class="post-stats">
+                    <div>
+                        <img src="./images/thumbsup.png"/>
+                        <span class="liked-users">21</span>
+                    </div>
+                    <div>
+                        <span>3 comments &middot; 2 reposts</span>
+                    </div>
+                </div>
+                <div class="post-activity">
+                    <div>
+                        <img src="./images/user-1.jpg" class="post-activity-user-icon"/>
+                        <img src="./images/down-arrow.png" class="post-activity-arrow-icon"/>
+                    </div>
+                    <div class="post-activity-link">
+                        <img src="./images/like.png"/>
+                        <span>Like</span>
+                    </div>
+                    <div class="post-activity-link">
+                        <img src="./images/comment.png"/>
+                        <span>Comment</span>
+                    </div>
+                    <div class="post-activity-link">
+                        <img src="./images/share.png"/>
+                        <span>Repost</span>
+                    </div>
+                    <div class="post-activity-link">
+                        <img src="./images/send.png"/>
+                        <span>Send</span>
+                    </div>
+                </div>
+            </div>
+            <div class="post">
+                <div class="post-author">
+                    <img src="./images/user4.jpg" />
+                    <div>
+                        <h1>Gayatri R</h1>
+                        <small>32+k Followers, Talent Acquisition Specialist and A Certified Design thinker</small>
+                        <small>1 day ago</small>
+                    </div>
+                </div>
+                <p>Planning without aspiration will give us good todays.<br/>
+                    But Planning with aspirations will gift us better tomorrow.<br/><br/>
+                    
+                    <a href="#">#mondaymotivation</a> <a href="#">#linkedinconnections</a> <a href="#">#linkedinprofiles</a> <a href="#">#staysafestay</a> <a href="#">#spreadpositivity</a> <a href="#">#connectionsatwork</a> <a href="#">#employeengagement</a> <a href="#">#sharing</a>
+                     <a href="#">#sharingiscaring</a> <a href="#">#connections</a> <a href="#">#linkedin</a> <a href="#">#sharingiscaring</a> <a href="#">#reference</a> <a href="#">#awareness</a></p>
+                <div class="post-stats">
+                    <div>
+                        <img src="./images/thumbsup.png"/>
+                        <img src="./images/love.png"/>
+                        <span class="liked-users">4</span>
+                    </div>
+                </div>
+                <div class="post-activity">
+                    <div>
+                        <img src="./images/user-1.jpg" class="post-activity-user-icon"/>
+                        <img src="./images/down-arrow.png" class="post-activity-arrow-icon"/>
+                    </div>
+                    <div class="post-activity-link">
+                        <img src="./images/like.png"/>
+                        <span>Like</span>
+                    </div>
+                    <div class="post-activity-link">
+                        <img src="./images/comment.png"/>
+                        <span>Comment</span>
+                    </div>
+                    <div class="post-activity-link">
+                        <img src="./images/share.png"/>
+                        <span>Repost</span>
+                    </div>
+                    <div class="post-activity-link">
+                        <img src="./images/send.png"/>
+                        <span>Send</span>
+                    </div>
+                </div>
+                <p>Be the first to comment on this</p>
+            </div>
+            <div class="post">
+                <div class="post-author">
+                    <img src="./images/user5.jpg" />
+                    <div>
+                        <h1>Nitin Singh</h1>
+                        <small>Senior Manager HR at Sagility</small>
+                        <small>11 months ago</small>
+                    </div>
+                </div>
+                <p><a href="#">#happydiwali2022</a> Thankyou <a href="#">#Sagility</a> for the wonderful Diwali GIFT</p>
+                <img src="./images/post-5.jpg" width="100%">
+                <div class="post-stats">
+                    <div>
+                        <img src="./images/thumbsup.png"/>
+                        <img src="./images/love.png"/>
+                        <img src="./images/clap.png"/>
+                        <span class="liked-users">72</span>
+                    </div>
+                    <div>
+                        <span>10 comments</span>
+                    </div>
+                </div>
+                <div class="post-activity">
+                    <div>
+                        <img src="./images/user-1.jpg" class="post-activity-user-icon"/>
+                        <img src="./images/down-arrow.png" class="post-activity-arrow-icon"/>
+                    </div>
+                    <div class="post-activity-link">
+                        <img src="./images/like.png"/>
+                        <span>Like</span>
+                    </div>
+                    <div class="post-activity-link">
+                        <img src="./images/comment.png"/>
+                        <span>Comment</span>
+                    </div>
+                    <div class="post-activity-link">
+                        <img src="./images/share.png"/>
+                        <span>Repost</span>
+                    </div>
+                    <div class="post-activity-link">
+                        <img src="./images/send.png"/>
+                        <span>Send</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="right-sidebar">
+            <div class="sidebar-news">
+                <img src="./images/more.png" class="info-icon"/>
+                <h3>LinkedIn News</h3>
+                <li><a href="#">India's Top Startups of 2023</a>
+                <p>Top news &middot;</p></li>
+                <li><a href="#">Smart cars to fuel demand</a>
+                <p>3d ago &middot;</p></li>
+                <li><a href="#">Private bank workforce grows</a>
+                <p>5h ago &middot;</p></li>
+                <li><a href="#">What Gen Z wants in a job</a>
+                <p>3h ago &middot;</p></li>
+                <li><a href="#">Finance battles to retain talent</a>
+                <p>1d ago &middot;</p></li>
+                <li><a href="#">High demand for skilled manpower</a>
+                <p>19h ago &middot;</p></li><br/>
+                <a href="#" class="show-more-link">Show more</a>
+            </div>
+            <div class="sidebar-ad">
+                <small>Ad &middot; &middot; &middot;</small>
+                <p>Master the 5 principles of web design</p>
+                <div>
+                    <img src="./images/user-1.jpg"/>
+                    <img  src="./images/angadiecom.png"/>
+                </div>
+                <strong>Build your eCommerce Store in Seconds</strong>
+                <a href="https://angadie.com" target="_blank" class="ad-link">Learn more</a>
+            </div>
+            <div class="sidebar-useful-links">
+                <a href="#">About</a>
+                <a href="#">Accessibility</a>
+                <a href="#">Help Center</a>
+                <a href="#">Privacy & Terms</a>
+                <a href="#">Ad Choices</a>
+                <a href="#">Advertising</a>
+                <a href="#">Business Services</a>
+                <a href="#">More</a>
+
+                <div class="copyright-msg">
+                    <span>Linked</span><img src="./images/logo.png"/>
+                    <p>&nbsp;LinkedIn Corporation &#169; 2023</p>
+                </div>
+            </div>
+        </div>
+    </div>
+<script>
+    let profileMenu = document.getElementById("profileMenu");
+    let sideActivity = document.getElementById("sidebarActivity");
+    let moreLink = document.getElementById("showMoreLink");
+
+    toggleMenu=()=>{profileMenu.classList.toggle("open-menu");
+    }
+    toggleActivity = () =>{
+        sideActivity.classList.toggle("open-activity");
+        if(sideActivity.classList.contains("open-activity")){
+            moreLink.innerHTML = "Show less <b>-</b>";
+        }
+        else{
+            moreLink.innerHTML = "Show more <b>+</b>";
+        }
+    }
+</script>
+</body>
+</html>
